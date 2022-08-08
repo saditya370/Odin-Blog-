@@ -1,2 +1,33 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+
+
+ <h1><strong>Articles<strong></h1>
+
+
+ <div class="card">
+  <div class="card-body", style="background-color: #DBF9FC">
+    <ol>
+  <% @articles.each do |article| %><h3><strong>
+    <li>
+        <%= link_to article.title, article %>
+    </li>
+    </strong></h3>
+ <% end %>
+</ol>
+ <!--<div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+    <h5 class="card-title"> <ol>
+  <% @articles.each do |article| %><h3><strong>
+    <li>
+    <img src="https://www.google.com/search?q=ruby+on+rails+image&sxsrf=ALiCzsY7oYp38PpAiGZiK3jl1a5c4ObvnA:1659963465398&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj_xcflpbf5AhWe6nMBHc7DAIYQ_AUoAXoECAEQAw&biw=1366&bih=586&dpr=1#imgrc=vrCu1xi_GAwR1M" class="card-img-top" alt="...">
+        <%= link_to article.title, article %>
+    </li>
+    </strong></h3>
+ <% end %> 
+</ol></h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+  </div>
+</div>
+  </div>
+</div>> -->
